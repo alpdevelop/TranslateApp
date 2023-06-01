@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1897bf;
+    min-height: 100vh;
+}
+
+ul{
+    list-style: none;
+    padding: 12px 15px;
+}
+.container{
+    width: 700px;
+    background-color: aliceblue;
+    border-radius: 10px ;
+    padding: 20px;
+}
+
+.box{
+    border-radius: 10px;
+    border: 1px solid #7f8487;
+}
+
+.controls, li , .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons i{
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.icons i:last-child{
+    margin-right: 10px;
+}
+.icons i:first-child{
+    margin-left: 10px;
+}
+
+.text-controls{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #7f8487;
+}
+
+.text-controls .to-text{
+    border-left: 1px solid #7f8487;
+    border-radius: 0;
+}
+
+.text-controls textarea{
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 15px;
+    resize: none;
+}
+
+button{
+    background-color: #555555;
+    border: 2px solid #555555;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 5px;
+    width: 100%;
+    font-size: 16px;
+    transition: .4s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #fff;
+    color: black;
+    border: 2px solid #555555;
+}

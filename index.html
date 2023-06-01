@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Translater</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <ul class="controls">
+                <li class="left">
+                    <div class="icons">
+                        <i class="fas fa-volume-up" id="leftVolume"></i>
+                        <i class="fas fa-copy" id="leftCopy"></i>
+                    </div>
+                    <select id="from-lang"></select>
+                </li>
+                <li class="exchangeIcon"><i class="fas fa-exchange-alt"></i></li>
+                <li class="right">
+                    <select id="to-lang"></select>
+                    <div class="icons">
+                        <i class="fas fa-volume-up" id="rightVolume"></i>
+                        <i class="fas fa-copy" id="rightCopy"></i>
+                    </div>
+                </li>
+            </ul>
+            <div class="text-controls">
+                <textarea class="from-text" id="from-text" placeholder="Enter a text"></textarea>
+                <textarea class="to-text" id="to-text" placeholder="Translation" disabled readonly></textarea>
+            </div>
+        </div>
+        <button id="btnTranslate">Translate</button>
+    </div>
+
+
+    <script src='languages.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>
